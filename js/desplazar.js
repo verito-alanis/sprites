@@ -34,11 +34,11 @@ function create(){
 //la funcion update permite actualizar las animaciones con velocidad que elegimos
 function update (){
     if (derecha.isDown){
-        player.x += 1;
+        fondo.tilePosition.x -= 1;
         player.animations.play('der');
     }
     else if (izquierda.isDown){
-        player.x -=1;
+        fondo.tilePosition.x += 1;
         player.animations.play('izq');
     }
     else {
